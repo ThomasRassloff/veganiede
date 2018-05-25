@@ -1,2 +1,20 @@
 version: '2'
 services:
+web:
+retain_ip: true
+scale: 1
+start_on_create: true
+health_check:
+      healthy_threshold: 2
+      response_timeout: 5000
+      port: 80
+      unhealthy_threshold: 3
+      interval: 5000
+      strategy: recreate
+      request_line: GET / HTTP/1.0
+app:
+scale: 1
+start_on_create: true
+db:
+scale: 1
+start_on_create: true
