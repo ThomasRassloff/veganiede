@@ -20,3 +20,11 @@ Route::get('/verifyemail/{token}', 'Auth\RegisterController@verify');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+
+
+Route::get ( '/redirect/{service}', 'SocialAuthController@redirect' );
+Route::get ( '/callback/{service}', 'SocialAuthController@callback' );

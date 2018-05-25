@@ -11,10 +11,20 @@
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
+
                         </div>
                     @endif
+                    <b>
+                        {{ Auth::user()->name }}
+                    </b>
 
-                    You are logged in!
+                    You are logged in!<br>
+                    Your data:<br>
+                        {{ Auth::user()->name }}
+                    <br>
+                        {{ Auth::user()->email }}
+                    <br>
+
                 </div>
             </div>
         </div>

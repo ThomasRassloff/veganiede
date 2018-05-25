@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -66,6 +67,30 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="links" style="width: 100%; display: inline-block;margin-left: auto; margin-right: auto;">
+                            <div style="float:left; padding:4px;">
+                                <a href="redirect/facebook" class="btn btn-block btn-sm btn-facebook">
+                                    <span class="fa fa-facebook"></span> Sign in with Facebook
+                                </a>
+                            </div>
+                            <div style="float:left; padding:4px;">
+                                <a href="redirect/google" class="btn btn-block btn-sm btn-google">
+                                    <span class="fa fa-google"></span> Sign in with Google &nbsp;&nbsp;&nbsp;
+                                </a>
+                            </div>
+                            <div style="float:left; padding:4px;">
+                                <a href="redirect/twitter" class="btn btn-block btn-sm btn-twitter">
+                                    <span class="fa fa-twitter"></span> Sign in with Twitter &nbsp;&nbsp;&nbsp;
+                                </a>
+
+                            </div>
+                            <div style="float:left; padding:4px;">
+                                <a href="redirect/github" class="btn btn-block btn-sm btn-github">
+                                    <span class="fa fa-github"></span> Sign in with GitHub &nbsp;&nbsp;&nbsp;
+                                </a>
                             </div>
                         </div>
                     </form>
