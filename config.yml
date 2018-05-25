@@ -1,0 +1,9 @@
+---
+name: veganie Demo App
+description: >
+  A Demo App which does almost nothing of any practical value.
+version: 0.0.1-rancher1
+category: Toy Apps
+maintainer: Nathan Valentine <thomas.rassloff@interim-group.de>
+license: Apache2
+projectURL: https://github.com/nrvale0/rancher-cattle-demo
